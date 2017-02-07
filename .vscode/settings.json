@@ -13,8 +13,8 @@
     "go.formatTool": "goreturns",
     "go.formatFlags": [],
     "go.goroot": "C:\\Go",
-    "go.gopath": "C:\\Users\\mud\\Documents\\GitHub\\GoSpeak",   
-    "go.toolsGopath":"C:\\Users\\mud\\Documents\\GitHub\\GoSpeak",  
+    "go.gopath": "${workspaceRoot}",   
+    "go.toolsGopath":"${workspaceRoot}",  
     "go.autocompleteUnimportedPackages": true,
     "go.gocodeAutoBuild": false    
 }

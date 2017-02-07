@@ -39,8 +39,8 @@ func (this *QuoteController) Post() {
 	if err := this.ParseForm(&quote); err != nil {
 		beego.Error("Couldn't parse the form. Reason: ", err)
 	} else {
-		beego.Debug("Qoute name supplied:", quote.Quote)
-		m := &models.Qoute{Text: quote.Quote, Author: quote.Author}
+		beego.Debug("Qoute supplied:", quote.Quote)
+		m := &models.Qoute{ID: -1, Text: quote.Quote, Author: quote.Author}
 		id, err := o.Insert(&m)
 		if err == nil {
 			msg := fmt.Sprintf("Qoute inserted with id:", id)
